@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.card {
+  position: relative;
+  border: 3px solid black;
+  width: 90%;
+  height: auto;
+  margin: 2em auto;
+  background-color: rgb(156, 156, 156);
+  padding: 40px 20px;
+}
+
+.row {
+  width: 100%;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 3px 30px;
+}
+
+.card-chicken > .card-title {
+  background-color: rgb(211, 101, 202);
+}
+
+.card-beef > .card-title {
+  background-color: rgb(141, 61, 61);
+  color: white;
+}
+
+.card-sushi > .card-title {
+  background-color: rgb(223, 180, 116);
+}
+
+.card-content {
+  line-height: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+}
